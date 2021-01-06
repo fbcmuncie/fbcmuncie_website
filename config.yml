@@ -18,7 +18,6 @@ params:
   sitename: "First Baptist Church Muncie"
   author: "Wade Allen"
   og_image: "/images/facebook-image.png"
-publishDir: /home/wadeallen/fbcmuncie_published 
 buildFuture: True
 summaryLength: 5
 
