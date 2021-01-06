@@ -1,0 +1,48 @@
+{{ define "content" }}
+
+    {{ $image := .Date.Format "2006-01-02"}}
+    {{ $sunday := .Date.Format "Jan 02"}}
+
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
+
+            <!-- Heading -->
+            <h2>
+              {{.Title}}<br>
+              <span class="text-success">{{$sunday}}</span>
+            </h2>
+
+            <p>
+            {{- range .Params.people }}
+            {{- with $.Site.GetPage "taxonomyTerm" (printf "people/%s" (urlize .)) }}
+            <a href="{{.Permalink}}">{{.Title}}</a>
+            {{ end }}
+            {{ end }}
+            </p>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6">
+              {{.Content}}
+            </p>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
+
+              {{$slug := .Title | urlize }}
+                {{$picturepath := $slug | printf "/images/people/%s.jpg"}}
+
+                {{ $directory := "static/images/sermon" }}
+                {{ $filename := $image | printf "%s.jpg" }}
+                {{ if (where (readDir $directory) "Name" $filename) }}
+              <!-- Image -->
+              <img src="/images/sermon/{{$image}}.jpg" alt="..." class="card-img-top">
+              {{end}}
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+{{end}}

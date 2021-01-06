@@ -1,0 +1,70 @@
+{{ define "content" }}
+
+
+
+    <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-4 text-center">
+              {{.Title}}
+            </h1>
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+
+
+
+              {{- range .Params.people }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "people/%s" (urlize .)) }}
+                <div class="avatar  avatar-xl">
+                  <img src="/images/people/{{ .Title | urlize | printf "%s.jpg" }}" alt="{{ .Title}}" class="avatar-img rounded-circle">
+                </div>
+
+              </div>
+
+             <div class="col ml-n5">
+
+                <h6 class="text-uppercase mb-0">
+                  <a href="{{.Permalink}}">{{.Title}}</a>
+                </h6>
+                {{ end }}
+              {{ end }}
+
+                <!-- Date -->
+                <time class="font-size-sm text-muted" datetime="2019-05-20">
+                  Published on  {{ .Date.Format "January 2"}}
+                </time>
+
+              </div>
+              <div class="col-auto">
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+        <section class="pt-6 pt-md-8 mb-10">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+ {{.Content}}
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+{{ partial "worship-bottom"}}
+
+{{ end }}

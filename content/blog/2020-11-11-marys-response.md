@@ -1,0 +1,10 @@
+---
+title: Mary's Response
+date: 2020-11-11
+people: 
+   - Wade Allen
+---
+
+As we work our way toward Thanksgiving, we continue in a series on gratitude. We will have a couple of testimonies this week and even more on the following Sunday (November 22). This week, we will consider Mary's response to God's call to bear the Messiah. Her journey would not be easy. Yet she responds in gratitude to God. As you prepare for worship, let me encourage you to read the passage for this week. I will include it below from the NTE version.
+
+> (Luke 1:39-55 NTE)  Mary got up then and there, and went in excitement to the hill country of Judaea.   She went into Zechariah's house, and greeted Elisabeth.   When Elisabeth heard Mary's greeting, the baby gave a leap in her womb. Elisabeth was filled with the holy spirit,   and shouted at the top of her voice: 'Of all women, you're the blessed one! And the fruit of your womb – he's blessed, too!   Why should this happen to me, that the mother of my Lord should come to me?   Look – when the sound of your greeting came to my ears, the child in my womb gave a great leap for joy!   A blessing on you, for believing that what the Lord said to you would come true!'  Mary said, 'My soul declares that the Lord is great,  my spirit exults in my saviour, my God.  He saw his servant-girl in her humility; from now, I'll be blessed by all peoples to come.  The Powerful One, whose name is Holy, has done great things for me, for me.  His mercy extends from father to son, from mother to daughter for those who fear him.  Powerful things he has done with his arm: he routed the arrogant through their own cunning.  Down from their thrones he hurled the rulers, up from the earth he raised the humble.  The hungry he filled with the fat of the land, but the rich he sent off with nothing to eat.  He has rescued his servant, Israel his child, because he remembered his mercy of old,  just as he said to our long-ago ancestors – Abraham and his descendants for ever.' 

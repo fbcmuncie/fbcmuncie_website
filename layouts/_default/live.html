@@ -1,0 +1,50 @@
+{{ define "content" }}
+
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-4 text-center">
+              {{.Title}}
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              {{.Description}}
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+<section class="pt-6 pt-md-8 mb-10">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+
+{{ $url := "data/live.csv" }}
+{{ $sep := "," }}
+{{ $live := getCSV $sep $url }}
+{{ range first 2 $live }}
+
+<div class="embed-responsive embed-responsive-16by9 mb-10">
+
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ index . 1 }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+{{ end }}
+
+    </div> <!-- / .row -->
+    <div class="text-center">
+  You can access all our live steams on our <a href="https://www.youtube.com/c/fbcmuncieorg">YouTube Channel</a>
+  </div>
+  </div> <!-- / .container -->
+</section>
+
+{{ end }}

@@ -1,0 +1,12 @@
+---
+title: Proper Gratitude
+date: 2020-09-08
+people: 
+   - Wade Allen
+---
+
+We come this week to last sermon in our series on Paul's letter to the church at Philippi. I have greatly enjoyed studying this letter with you. In the concluding sentences, Paul thanks the church for the provisions received from Epaphroditus...sort of. He never really says *thank you*. Perhaps there is a reason for the way Paul's states his gratitude. 
+
+On Sunday, we will look at Philippians 4:10-23 and discuss why Paul closes the letter in this form. Let me encourage you to read the passage ahead of time as you prepare for worship.
+
+> (Philippians 4:10-23 NTE)  I've been having a great celebration in the Lord because your concern for me has once again burst into flower. (You were of course concerned for me before, but you didn't have an opportunity to show it.)  I'm not talking about lacking anything. I've learnt to be content with what I have.   I know how to do without, and I know how to cope with plenty. In every possible situation I've learned the hidden secret of being full and hungry, of having plenty and going without, and it's this:   I have strength for everything in the one who gives me power.  But you did the right thing by entering into partnership with me in my suffering.   Indeed, as you people in Philippi know well, when the gospel was getting under way and I was moving on from Macedonia, there wasn't a single other church, except yourselves, that entered into a two-way partnership with me, giving and receiving.   Yes: when I was in Thessalonica you sent help to me, not just once but twice.  I stress that it isn't the gift I'm interested in. My concern is that you should have a healthy profit balance showing up on your account.   For myself, I've received full payment, and I'm well stocked up. In fact, I'm full to overflowing, now that I have received from Epaphroditus what you sent. It's like a sacrifice with a beautiful smell, a worthy offering, giving pleasure to God.   What's more, my God will meet all your needs, too, out of his store of glorious riches in King Jesus.   Glory be to our God and father for ever and ever, Amen!  Give my greetings to all God's people in King Jesus. The family with me here send their greetings.   All God's people send you greetings, especially those from Caesar's household.  The grace of the Lord Jesus, the Messiah, be with your spirit. 

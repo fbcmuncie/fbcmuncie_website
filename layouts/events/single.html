@@ -1,0 +1,52 @@
+{{ define "content" }}
+
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-4 text-center">
+              {{.Title}}
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              {{ $day := .Params.Date.Format "Monday, January 2, 2006" }}
+              {{ $time := .Params.Date.Format "3:04 PM"}}
+              {{ $day }}</br>
+              {{ if ne $time "12:00 AM" }}
+              {{$time}}
+              {{end}}
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <section class="pt-6 pt-md-8 mb-8">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Text -->
+            {{ if .Params.what }}
+           <p><strong>What:</strong> {{ .Params.what }}</p>
+            {{ end }}
+            {{ if .Params.where }}
+            <p><strong>Where:</strong> {{ .Params.where }}</p>
+            {{ end }}
+            {{ if .Params.contact }}
+            <p><strong>Contact:</strong> {{ .Params.contact }}</p>
+            {{ end }}
+             {{.Content}}
+             {{ if .Params.deadline }}
+             <p><strong>Deadline:</strong>{{ .Params.deadline }}</p>
+             {{ end }}
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+{{ end }}

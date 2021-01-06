@@ -1,0 +1,48 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+
+<itunes:new-feed-url>http://fbcmuncie.org/podcast/fbcmuncie.xml</itunes:new-feed-url>
+<title>First Baptist Church Muncie Indiana</title>
+<description>Sermons from First Baptist Church Muncie Indiana</description>
+<link>http://fbcmuncie.org</link>
+<language>en-us</language>
+<copyright>Copyright {{ now.Format "2006"}}</copyright>
+<lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
+<pubDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST"  }}</pubDate>
+<docs>http://fbcmuncie.org</docs>
+<webMaster>wade@fbcmuncie.org (Wade Allen)</webMaster>
+<itunes:author>Wade Allen</itunes:author>
+<itunes:subtitle>Sermons from First Baptist Church Muncie Indiana</itunes:subtitle>
+<itunes:summary>This podcast includes sermons from First Baptist Church in Muncie, Indiana.</itunes:summary>
+<itunes:owner>
+       <itunes:name>Wade Allen</itunes:name>
+       <itunes:email>wade@fbcmuncie.org</itunes:email>
+</itunes:owner>
+<itunes:explicit>No</itunes:explicit>
+<itunes:image href="http://fbcmuncie.org/images/fbc_podcast_logo.png"/>
+<itunes:category text="Religion and Spirituality">
+     <itunes:category text="Christianity"/>
+</itunes:category>
+
+{{ $videos := where .Site.RegularPages.ByDate "Section" "video" }}
+{{ $videos := sort $videos ".Date" }}
+{{ range $videos.Reverse }}
+<item>
+<title>{{ .Title }}</title>
+<link>{{ .Permalink }}</link>
+<guid>http://audio.fbcmuncie.org/{{ .Date.Format "2006-01-02" }}.mp3</guid>
+<description>{{ .Content | plainify }}</description>
+<enclosure url="http://audio.fbcmuncie.org/{{ .Date.Format "2006-01-02" }}.mp3" length="{{ .Params.length }}" type="audio/mpeg"/>
+<category>Sermons</category>
+<pubDate>{{ .Date.Format "Mon, 02 Jan 2006" }} 16:15:00 EST</pubDate>
+<itunes:author>{{- range .Params.people }}{{- with $.Site.GetPage "taxonomyTerm" (printf "people/%s" (urlize .)) }}{{.Title}}{{ end }}{{ end }}</itunes:author>
+<itunes:explicit>No</itunes:explicit>
+<itunes:subtitle>{{ .Content | plainify }}</itunes:subtitle>
+<itunes:summary>{{ .Content | plainify }}</itunes:summary>
+<itunes:duration>{{ .Params.duration }}</itunes:duration>
+<itunes:keywords>church, sermon</itunes:keywords>
+</item>
+{{ end }}
+</channel>
+</rss>

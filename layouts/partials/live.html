@@ -1,0 +1,40 @@
+
+
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+	  	<h1>Live Stream</h1>
+
+        
+
+{{ $url := "data/live.csv" }}
+{{ $sep := "," }}
+{{ $live := getCSV $sep $url }}
+{{ range first 1 $live }}
+
+<div class="embed-responsive embed-responsive-16by9 mb-10">
+
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ index . 1 }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+
+<!-- <div class="text-centered">
+	<a href="/live"><button class="btn btn-success-soft"><i class="fas fa-stream mr-3"></i>Last Week's Live Stream</button></a>
+</div> -->
+
+{{ end }}
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+  <!-- Full Calendar links here -->
+
+   {{if eq .Title "Calendar"}}
+
+<!-- CSS for Full Calendar -->
+   {{ $fccore := resources.Get "fullcalendar/core/main.min.css" }}
+   {{ $fclist := resources.Get "fullcalendar/list/main.min.css" }}
+   {{ $fcdaygrid := resources.Get "fullcalendar/daygrid/main.min.css" }}
+   {{ $fcbs := resources.Get "fullcalendar/bootstrap/main.min.css" }}
+   {{ $fccss := slice $fccore $fclist $fcdaygrid $fcbs | resources.Concat "css/fc-css.css" }}
+   <link id="fc-css" rel="stylesheet" href="{{ $fccss.RelPermalink }}">
+
+   <!-- JS for full calendar -->
+   {{ $fcjscore := resources.Get "/fullcalendar/core/main.min.js" }}
+   {{ $fcjslist := resources.Get "/fullcalendar/list/main.min.js" }}
+   {{ $fcjsgc := resources.Get "/fullcalendar/google-calendar/main.min.js" }}
+   {{ $fcjsdaygrid := resources.Get "/fullcalendar/daygrid/main.min.js" }}
+   {{ $fcjsbs := resources.Get "/fullcalendar/bootstrap/main.min.js" }}
+   {{ $fcjs := slice $fcjscore $fcjslist $fcjsgc $fcjsdaygrid $fcjsbs | resources.Concat "css/fc-js.css" }}
+   <script src="{{ $fcjs.RelPermalink }}"></script>
+
+   <script type='text/javascript'>
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+              plugins: [ 'bootstrap', 'list', 'dayGrid', 'googleCalendar' ],
+
+              defaultView: 'dayGridMonth',
+              eventColor: '#704e42',
+
+              googleCalendarApiKey: 'AIzaSyBYnsHzcoT2gZCyMaW72S1NbxPEifFX-5s',
+              eventSources: [
+                {
+                googleCalendarId:'fbcmuncie.org_oamafcbnnsdl356288bd7hka84@group.calendar.google.com', 
+                className: 'gcal-church-event' // an option!
+                },
+                {
+                googleCalendarId:'fbcmuncie.org_nsm5cibhj5umek2s44149brfqo@group.calendar.google.com', 
+                className: 'gcal-building-event' // an option!
+                }
+                ],
+                eventClick: function(info) {
+                    info.jsEvent.preventDefault(); 
+                  }
+            });
+
+            calendar.render();
+          });
+
+    </script>
+
+   {{ end }}

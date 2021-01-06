@@ -1,0 +1,187 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
+  <head itemscope itemtype="{{ .Site.BaseURL }}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- Title Tags -->
+    <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+    <!-- Description Tags -->
+    <meta name="description" content="{{ .Params.description }}" />
+    <meta itemprop="description" content="{{ .Params.description }}" />
+    <meta property="og:description" content="{{ .Params.description }}" />
+    <meta name="twitter:description" content="{{ .Params.description }}" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://fbcmuncie.org/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/icons/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/favicon-152.png">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="application-name" content="First Baptist Church Muncie">
+    <meta name="msapplication-TileImage" content="/icons/favicon-144.png">
+    <meta name="msapplication-TileColor" content="#21213e">
+
+
+    <!-- Link Tags -->
+    <base href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+    <meta name="url" content="{{ .Permalink }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" /> 
+    <meta property="og:url" content="{{ .Permalink }}" />
+
+    <!-- Search Engine Crawler Tags -->
+    <meta name="robots" content="index,follow" /> 
+    <meta name="googlebot" content="index,follow" />
+
+    <!-- Specific Social Media Tags -->
+    <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
+    <meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
+    <meta property="fb:app_id" content="538089519640705" />
+    <meta property="fb:admins" content="100000686899395" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/fonts/Feather/feather.css">
+
+    <!-- Libs CSS -->
+    {{ $flickity := resources.Get "libs/flickity/dist/flickity.min.css" }}
+    {{ $flickityfade := resources.Get "libs/flickity-fade/flickity-fade.css" }}
+    {{ $aos := resources.Get "libs/aos/dist/aos.css" }}
+    {{ $jarallax := resources.Get "libs/jarallax/dist/jarallax.css" }}
+    {{ $highlightjs := resources.Get "libs/highlightjs/styles/vs2015.css" }}
+    {{ $fancyapps := resources.Get "libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css" }}
+    {{ $libscss := slice $flickity $flickityfade $aos $jarallax $highlightjs $fancyapps | resources.Concat "css/libs-css.css" }}
+    <link id="libs-css" rel="stylesheet" href="{{ $libscss.RelPermalink }}">
+
+  <!-- Fontawesome -->
+  {{ $fontawesome := resources.Get "css/all.min.css" }}
+  <link href="{{ $fontawesome.RelPermalink }}" rel="stylesheet">
+
+
+   <!-- for giving page -->
+  {{if eq .Title "Giving"}}
+  <script src="https://js.churchcenter.com/modal/v1"></script>
+  {{ end }}
+
+    <!-- Theme CSS use fingerprint option when working on theme -->
+    <!-- {{ $style := resources.Get "scss/theme.scss" | toCSS | minify | fingerprint }} -->
+    {{ $style := resources.Get "scss/theme.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <title>{{ .Site.Title }}</title>
+
+    <!-- Start of Open Graph -->
+    {{ if .IsHome }}
+    <meta property="og:title" content="{{ .Site.Title }}">
+    {{else}}
+    <meta property="og:title" content="{{ .Title }} • {{ .Site.Title }}">
+    {{end}}
+    {{ if .IsPage }}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">
+    {{ if .Description }}
+    <meta property="og:description" content="{{ .Description }}">
+    {{end}}
+    {{ else }}
+    <meta property="og:type" content="website">
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{ if eq .Section "video" }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/video/{{.Date.Format "2006-01-02"}}.jpg">  
+    <meta property="og:description" content="{{ .Content }}"> 
+    {{else if eq .Section "blog"}} 
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/facebook-image.png">  
+    <meta property="og:description" content="{{ .Content }}">
+    {{end}}
+    {{ if .Params.thumbnail }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+    {{ end }}
+    {{ range .Params.tags }}
+    <meta property="og:tags" content="{{ . }}">
+    {{ end }}
+    <meta property="fb:admins" content="firstbaptistmuncie">
+    <!-- End of Open Graph -->
+
+        <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ .Permalink }}">
+    {{ if .IsHome }}
+    <meta property="twitter:title" content="{{ .Site.Title }}">
+    {{else}}
+    <meta property="twitter:title" content="{{ .Title }} • {{ .Site.Title }}">
+    {{end}}
+    {{ if .Description }}
+    <meta property="twitter:description" content="{{ .Description }}">
+    {{end}}
+    {{ if eq .Section "video" }}
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}/images/video/{{.Date.Format "2006-01-02"}}.jpg">  
+    <meta property="twitter:description" content="{{ .Content }}"> 
+     {{else if eq .Section "blog"}} 
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}/images/facebook-image.png">  
+    <meta property="twitter:description" content="{{ .Content }}">
+    {{end}}
+    <meta name="twitter:image:width" content="640">
+    <meta name="twitter:image:height" content="360">
+  </head>
+  <body>
+
+  {{ partial "navbar" . }}
+
+ {{ block "content" . }}{{ end }}
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+{{ partial "footer" . }}
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    {{ $jquery := resources.Get "libs/jquery/dist/jquery.min.js" }}
+    {{ $bootstrap := resources.Get "libs/bootstrap/dist/js/bootstrap.bundle.min.js" }}
+    {{ $flickity := resources.Get "libs/flickity/dist/flickity.pkgd.min.js" }}
+    {{ $flickityfade := resources.Get "libs/flickity-fade/flickity-fade.js" }}
+    {{ $aos := resources.Get "libs/aos/dist/aos.js" }}
+    {{ $smoothscroll := resources.Get "libs/smooth-scroll/dist/smooth-scroll.min.js" }}
+    {{ $jarallax := resources.Get "libs/jarallax/dist/jarallax.min.js" }}
+    {{ $jarallaxvideo := resources.Get "libs/jarallax/dist/jarallax-video.min.js" }}
+    {{ $jarallaxelement := resources.Get "libs/jarallax/dist/jarallax-element.min.js" }}
+    {{ $typed := resources.Get "libs/typed.js/lib/typed.min.js" }}
+    {{ $countup := resources.Get "libs/countup.js/dist/countUp.min.js" }}
+    {{ $highlightjs := resources.Get "libs/highlightjs/highlight.pack.min.js" }}
+    {{ $fancyapps := resources.Get "libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js" }}
+    {{ $isotype := resources.Get "libs/isotope-layout/dist/isotope.pkgd.min.js" }}
+    {{ $imagesloaded := resources.Get "libs/imagesloaded/imagesloaded.pkgd.min.js" }}
+
+
+    {{ $libsjs := slice $jquery $bootstrap $flickity $flickityfade $aos $smoothscroll $jarallax $jarallaxvideo $jarallaxelement $typed $countup $highlightjs $fancyapps $isotype $imagesloaded | resources.Concat "js/libsjs.js" }} 
+    <script src="{{ $libsjs.RelPermalink }}"></script>
+
+
+    <!-- Theme JS -->
+    {{ $themejs := resources.Get "js/theme.min.js" }}
+    <script src="{{ $themejs.RelPermalink }}"></script>
+      
+  </body>
+</html>

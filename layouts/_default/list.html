@@ -1,0 +1,107 @@
+{{ define "content" }}
+
+ <!-- WELCOME
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="pt-10 pt-md-12 pb-10 pb-md-12 bg-cover jarallax" style="margin-top: -83px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Headin -->
+            <h1 class="display-4 text-center">
+              {{.Title}}
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              {{.Description}}
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-8 py-md-11 mt-n10 mt-md-n14">
+      <div class="container">
+        <div class="row" id="leader" data-aos="fade-up" data-aos-delay="100" data-isotope='{"layoutMode": "masonry"}'>
+          {{ range .Pages }}
+          {{ $date_1 := .Date.Format "2006-01-02"}}
+          {{ $date_2 := .Date.Format "Jan 02"}}
+          <div class="col-12 col-md-6 d-flex">
+            
+            <!-- Card -->
+            <div class="card mb-6 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="{{.Permalink}}">
+
+                  <!-- Badge -->
+                  <span class="badge badge-pill badge-light badge-float badge-float-inside">
+                    <span class="h6 text-uppercase">Event</span>
+                  </span>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="{{.Permalink}}">
+
+                <!-- Heading -->
+                <h3 class="mt-5">
+                  {{.Title}}
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                 {{.Summary}}
+                </p>
+
+              </a>
+                
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="{{.Permalink}}">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm mr-2">
+                  <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+                
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                  Name of Contact
+                </h6>
+                
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <time datetime="{{$date_1}}">{{$date_2}}</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          {{end}}
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+{{ end }}

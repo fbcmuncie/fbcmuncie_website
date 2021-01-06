@@ -1,0 +1,104 @@
+{{ define "content" }}
+
+ <!-- WELCOME
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="pt-10 pt-md-12 pb-10 pb-md-12 bg-cover jarallax" style="margin-top: -83px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Headin -->
+            <h1 class="display-4 text-center">
+              {{.Title}}
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              {{.Description}}
+            </p>
+
+            <!-- Badges -->
+            <nav class="nav justify-content-center">
+              <a class="badge badge-pill badge-secondary-soft active mr-1 mb-1" href="#" data-toggle="pill" data-filter="*" data-target="#leader">
+                <span class="h6 text-uppercase">All</span>
+              </a>
+              <a class="badge badge-pill badge-secondary-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".pastors" data-target="#leader">
+                <span class="h6 text-uppercase">Pastors</span>
+              </a>
+              <a class="badge badge-pill badge-secondary-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".cct" data-target="#leader">
+                <span class="h6 text-uppercase">Church Coordination Team</span>
+              </a>
+            </nav>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="py-8 py-md-11 mt-n10 mt-md-n14">
+      <div class="container">
+        <div class="row" id="leader" data-isotope='{"layoutMode": "masonry"}'>
+        	{{ range .Pages }}
+        	{{ if isset .Params "roles" }}
+          <div class="col-12 col-md-4 {{ range $val := .Params.roles }}{{ $val}} {{end}}">
+
+            <!-- Card -->
+            <a class="card shadow-light-lg mb-7" href="{{.Permalink}}">
+
+              <!-- Image -->
+              <div class="card-zoom">
+              	{{$slug := .Title | urlize }}
+                {{$picturepath := $slug | printf "/images/people/%s.jpg"}}
+
+                {{ $directory := "static/images/people" }}
+                {{ $filename := $slug | printf "%s.jpg" }}
+                {{ if (where (readDir $directory) "Name" $filename) }}
+                <img class="card-img" src="/images/people/{{$filename}}" alt="{{.Title}}">
+                {{else}}
+                <img class="card-img" src="/images/blank.png" alt="{{.Title}}">
+                {{end}}
+              </div>
+              
+
+
+              <!-- Overlay -->
+                <div class="card-body bg-white">
+
+                  <!-- Shape -->
+                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">{{.Params.position}}</h6>
+
+                  <!-- Heading -->
+                  <h4 class="mb-0">{{ if .Params.prefix }}{{ .Params.prefix }}{{ end }} {{.Title}}</h4>
+
+                </div>
+
+            </a>
+          </div>
+          {{end}}
+          {{end}}
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+{{ end }}

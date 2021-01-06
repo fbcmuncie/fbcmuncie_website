@@ -1,0 +1,6 @@
+
+<div class="col-md-4">
+  {{ if isset . "image" }}<img src="/images/people/{{.image}}" class="img-thumbnail" alt="{{.name}}">{{else}}<img src="/images/500x375.png" class="img-thumbnail" alt="Responsive image">{{end}}
+  <h4 class="mb-0 mx-auto text-center">{{.name}}</h4>
+  <h6 class="text-uppercase mb-1 text-muted text-center">{{.position}}</h6>
+</div>

@@ -1,0 +1,84 @@
+    <!-- Videos
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-gradient-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Live Streams</span>
+            </span>
+
+            <!-- Heading -->
+            <h1>
+              Live Streams
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-7 mb-md-9">
+              Access live stream video from past weeks
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          {{ $videos := where .Site.RegularPages.ByDate "Section" "video" }}
+          {{ $videos := sort $videos ".Date" }}
+          {{ range $videos.Reverse | first 3 }}
+          <div class="col-12 col-md-4" data-aos="fade-up">
+            
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg">
+              
+              <!-- Image -->
+              <img src="/images/live-stream-1045.jpg" alt="{{ .Title }}" class="card-img-top">
+
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-fluid-x shape-bottom svg-shim text-white">
+                  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <a class="card-body" href="{{ .RelPermalink }}">
+
+                <!-- Badge -->
+<!--                 <div class="position-relative text-right mt-n8 mr-n4 mb-3">
+                  <span class="badge badge-pill badge-success">
+                    <span class="h6 text-uppercase">
+                    {{- range .Params.people }}
+                      {{- with $.Site.GetPage "taxonomyTerm" (printf "people/%s" (urlize .)) }}
+                      {{.Title}}
+                      {{ end }}
+                    {{ end }}
+                    </span>
+                  </span>
+                </div> -->
+                
+                <!-- Heading -->
+                <h3>
+                  {{ .Title }}
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  {{ .Date.Format "Jan 2, 2006"}}
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          {{ end }}
+        </div> <!-- / .row -->
+                <div class="col-12">
+                  <!-- Divider -->
+                  <hr class="my-6 my-md-8 border-gray-300">
+                </div>
+      </div> <!-- / .container -->
+    </section>

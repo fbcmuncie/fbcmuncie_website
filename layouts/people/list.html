@@ -1,0 +1,168 @@
+{{ define "content" }}
+
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
+
+            <!-- Heading -->
+            <h2>
+              {{.Title}}<br>
+              <span class="text-success">{{.Params.position}}</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6">
+              {{.Content}}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
+
+              {{$slug := .Title | urlize }}
+                {{$picturepath := $slug | printf "/images/people/%s.jpg"}}
+
+                {{ $directory := "static/images/people" }}
+                {{ $filename := $slug | printf "%s.jpg" }}
+                {{ if (where (readDir $directory) "Name" $filename) }}
+              <!-- Image -->
+              <img src="/images/people/{{$filename}}" alt="..." class="card-img-top">
+              {{else}}
+              <img src="/images/blank.png" alt="..." class="card-img-top">
+              {{end}}
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+       <!-- SECTION
+    ================================================== -->
+    <section class="pt-6 pt-md-8 pb-3 pb-md-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+
+
+              </div>
+              <div class="col ml-n5">
+
+
+              </div>
+              <div class="col-auto">
+
+                {{ if or (.Params.twitter) (.Params.facebook) (.Params.instagram) }}
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline mr-4">
+                  Social Media:
+                </span>
+
+                <!-- Icons -->
+                <ul class="d-inline list-unstyled list-inline list-social">
+                  {{ if .Params.twitter }}
+                  <li class="list-inline-item list-social-item mr-3">
+                    <a href="https://twitter.com/{{.Params.twitter}}" class="text-decoration-none">
+                      <img src="/images/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ if .Params.facebook }}
+                  <li class="list-inline-item list-social-item mr-3">
+                    <a href="https://www.facebook.com/{{.Params.facebook}}" class="text-decoration-none">
+                      <img src="/images/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  {{end}}
+                  {{ if .Params.instagram }}
+                  <li class="list-inline-item list-social-item mr-3">
+                    <a href="https://www.instagram.com/{{.Params.instagram}}" class="text-decoration-none">
+                      <img src="/images/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  {{end}}
+                </ul>
+
+                {{end}}
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+{{ $video := where .Pages.ByDate.Reverse "Section" "video" }}
+{{ if len $video | lt 1 }}
+    <section class="pt-2 pt-md-10 mb-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Heading -->
+            <h3 class="mb-0">
+              Recent Sermons
+            </h3>
+            <!-- Text -->
+            <p class="mb-5 text-muted">
+              {{.Title}}
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          {{ range first 3 $video }}
+          {{ $image := .Date.Format "2006-01-02"}}
+          {{ $sunday := .Date.Format "Jan 02"}}
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="{{.Permalink}}">
+                <!-- Image -->
+                <img src="/images/video/{{$image}}.jpg" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="{{.Permalink}}">
+                <!-- Heading -->
+                <h3>
+                  {{.Title}}
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  {{.Params.scripture | plainify | truncate 100}}
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <time datetime="{{$image}}">{{$sunday}}</time>
+                </p>
+              </a>
+            </div>
+          </div>
+           {{end}}
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    {{else}}
+    {{end}}
+
+
+
+{{ end }}
