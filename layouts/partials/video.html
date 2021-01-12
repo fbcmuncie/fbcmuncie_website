@@ -23,16 +23,19 @@
           </div>
         </div> <!-- / .row -->
         <div class="row">
-          {{ $videos := where .Site.RegularPages.ByDate "Section" "video" }}
-          {{ $videos := sort $videos ".Date" }}
-          {{ range $videos.Reverse | first 3 }}
+          {{ $url := "data/live.csv" }}
+          {{ $sep := "," }}
+          {{ $live := getCSV $sep $url }}
+          {{ range first 3 (after 1 $live) }}
+          {{ $sunday_date := index . 0 }}
+
           <div class="col-12 col-md-4" data-aos="fade-up">
             
             <!-- Card -->
             <div class="card mb-6 mb-lg-0 shadow-light-lg">
               
               <!-- Image -->
-              <img src="/images/live-stream-1045.jpg" alt="{{ .Title }}" class="card-img-top">
+              <img src="/images/live-stream-1045.jpg" alt="{{ dateFormat "January 2" $sunday_date }}" class="card-img-top">
 
               <!-- Shape -->
               <div class="position-relative">
@@ -44,29 +47,15 @@
               </div>
 
               <!-- Body -->
-              <a class="card-body" href="{{ .RelPermalink }}">
+              <a class="card-body" href="https://youtu.be/{{ index . 1 }}">
 
-                <!-- Badge -->
-<!--                 <div class="position-relative text-right mt-n8 mr-n4 mb-3">
-                  <span class="badge badge-pill badge-success">
-                    <span class="h6 text-uppercase">
-                    {{- range .Params.people }}
-                      {{- with $.Site.GetPage "taxonomyTerm" (printf "people/%s" (urlize .)) }}
-                      {{.Title}}
-                      {{ end }}
-                    {{ end }}
-                    </span>
-                  </span>
-                </div> -->
-                
-                <!-- Heading -->
                 <h3>
-                  {{ .Title }}
+                  {{ dateFormat "January 2" $sunday_date }}
                 </h3>
 
                 <!-- Text -->
                 <p class="mb-0 text-muted">
-                  {{ .Date.Format "Jan 2, 2006"}}
+                  Live Stream
                 </p>
 
               </a>
