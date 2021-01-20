@@ -7,12 +7,11 @@ people:
 layout: weddings
 ---
 
-For more information on availability, please contact Christy Allen, Wedding Coordinator, at 765-717-5229.
+For more information on availability, please contact the church office at 765-284-7749.
 
 To reserve your date, you will need to mail the contract, the information sheet and a deposit to:
 
 First Baptist Church  
-Attention: Christy Allen  
 309 E. Adams Street  
 Muncie, Indiana 47305
 
