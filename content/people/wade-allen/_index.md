@@ -6,7 +6,7 @@ twitter: wadeallen
 facebook: wadesallen
 instagram: wadechristy
 linkedin: wade-allen-5730b879
-roles: []
+staff: false
 weight: 1
 ---
 
