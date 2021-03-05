@@ -1,5 +1,5 @@
 ---
-title: Good Ideas or God Ideas
+title: Good Ideas or God Ideas?
 date: 2021-03-05
 people: 
    - Julie Davis
