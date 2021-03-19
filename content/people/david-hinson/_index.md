@@ -1,4 +1,3 @@
-
 ---
 title: David Hinson
 prefix: Dr.
