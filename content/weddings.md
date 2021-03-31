@@ -3,7 +3,7 @@ title: "Weddings"
 description: A great place to get married. Its beautiful Gothic architecture makes it one of Muncie’s most beautiful churches.
 menu: "building"
 people:
-  - Christy Allen
+  - Ella Mae Lemen
 layout: weddings
 ---
 
