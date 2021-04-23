@@ -17,7 +17,7 @@ Muncie, Indiana 47305
 
 {{< button-form "Download Wedding Contract" "wedding-contract-2021.pdf">}}
 
-{{< button-link "Fill Out Information Form" "http://bit.ly/fbc-wedding">}}
+{{< button-link "Fill Out Information Form" "https://fbcmuncie.churchcenter.com/people/forms/243785">}}
 
 {{< button-form "Download Bridal Packet" "bridal-packet-2021.pdf">}}
 
