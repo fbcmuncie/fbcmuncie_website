@@ -1,7 +1,8 @@
 ---
 title: A New Spirit For a New Day
 date: 2021-04-11
-people:    - Dr. David Hinson
+people:
+  - Dr. David Hinson
 ---
 
 On May 24, 1738, John Wesley came out of a prayer meeting on Aldersgate Street, having been “shaken” by God.  
