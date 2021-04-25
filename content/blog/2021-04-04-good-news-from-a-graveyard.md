@@ -1,7 +1,8 @@
 ---
 title: Good News From a Graveyard
 date: 2021-04-04
-people:    - Dr. David Hinson
+people:
+  - Dr. David Hinson
 ---
 
 Good news travels fast. Graveyards tell a story, and Resurrection Sunday has a story worth telling. What is the Good News? “He is not here… He is risen!” Of course, there is even more to the story… There is value in your life. Your history matters, but so does your future! God cares about you. He sent His Son to teach us how to live.

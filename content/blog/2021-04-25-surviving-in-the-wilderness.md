@@ -1,12 +1,13 @@
 ---
 title: Surviving in the Wilderness
 date: 2021-04-25
-people:    - Dr. David Hinson
+people:
+  - Dr. David Hinson
 ---
 
 Surviving in the Wilderness
 
-The wilderness is a hard place to be; trackless and harsh. 
+The wilderness is a hard place to be; trackless and harsh.
 There are many voices in the wilderness.
 The beginning of the good news about Jesus the Messiah, the Son of God, as it is written in Isaiah the prophet:
 
