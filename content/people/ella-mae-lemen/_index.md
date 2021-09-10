@@ -1,7 +1,7 @@
 ---
 title: "Ella Mae Lemen"
 prefix: 
-position:
+position: Wedding Coordinator
 twitter: 
 facebook: 
 linkedin: 
