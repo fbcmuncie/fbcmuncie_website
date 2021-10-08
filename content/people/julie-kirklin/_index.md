@@ -1,7 +1,7 @@
 ---
 title: "Julie Kirklin"
 prefix: 
-position:
+position: Clerk
 twitter: 
 facebook: 
 linkedin: 
