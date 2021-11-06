@@ -1,6 +1,6 @@
 ---
 title: Critical Times
-date: 2021-11-7
+date: 2021-11-07
 people:
   - Dr. David Hinson
 ---
