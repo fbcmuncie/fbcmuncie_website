@@ -13,4 +13,4 @@ The cross is a focus for Christians to find and follow God’s plan for one’s 
 
 Luke 22:42-43, NIV
 
-The resources of heaven come to us when we yield our lives to his care and keeping.  James 2:17 reminds us: “Faith, if it is not accompanied by action, is dead.”  
+The resources of heaven come to us when we yield our lives to his care and keeping.  James 2:17 reminds us: “Faith, if it is not accompanied by action, is dead.”
