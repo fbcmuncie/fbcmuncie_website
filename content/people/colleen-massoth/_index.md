@@ -1,7 +1,11 @@
 ---
 title: Colleen Massoth
+prefix: 
 position: Church Clerk
-staff: false
+twitter: 
+facebook: 
+linkedin: 
+roles: [cct]
 weight: 3
 ---
 
