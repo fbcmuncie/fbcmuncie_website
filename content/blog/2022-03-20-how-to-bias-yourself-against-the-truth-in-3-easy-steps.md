@@ -2,7 +2,7 @@
 title: How to Bias Yourself Against the Truth in 3 Easy Steps
 date: 2022-03-20
 people:
-  - Dr. David Hinson
+  - Julie Davis
 ---
 
 How to Bias Yourself Against the Truth in 3 Easy Steps | Mark 6
