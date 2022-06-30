@@ -5,7 +5,7 @@ position: Outreach
 twitter: 
 facebook: 
 linkedin: 
-roles: [cct]
+roles:
 weight: 5
 ---
 
