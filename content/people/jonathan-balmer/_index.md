@@ -8,6 +8,6 @@ instagram:
 linkedin: 
 staff: true
 weight: 1
-roles: [pastors]
+roles: ["pastors", "cct"]
 ---
 
