@@ -5,7 +5,7 @@ position: Church Clerk
 twitter: 
 facebook: 
 linkedin: 
-roles: [cct]
+roles:
 weight: 3
 ---
 
