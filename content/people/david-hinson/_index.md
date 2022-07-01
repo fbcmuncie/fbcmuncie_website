@@ -1,9 +1,8 @@
 ---
 title: David Hinson
 prefix: Dr.
-position: Interim Pastor
+position: 
 twitter: 
 facebook: 
-roles:
 weight: 1
 ---
