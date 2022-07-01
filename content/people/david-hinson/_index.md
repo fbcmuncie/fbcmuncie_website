@@ -4,6 +4,6 @@ prefix: Dr.
 position: Interim Pastor
 twitter: 
 facebook: 
-roles: [pastors]
+roles:
 weight: 1
 ---
