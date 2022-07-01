@@ -7,31 +7,6 @@ people:
   - Britney Sue
 ---
 
-# Welcome Back
-
-Children's Ministry has resumed at First Baptist Muncie as of September 13, 2020. Please read the following note from the Children's Ministry Team for details.
-
-
-{{< button-form "Children Welcome Back Letter" "children-welcome-back-2020.pdf">}}
-
-# Lesson Videos for Children
-
-### Pre-K Sunday School
-
-{{< youtube-playlist "PLhBlTVSSFAoIk7pPpy11a-ZQ-fIyYqIhI" >}}
-
-### K-2nd Grade Sunday School
-
-{{< youtube-playlist "PLhBlTVSSFAoIGdZtTl5t8b4jAi3PhabqB" >}}
-
-### 3rd-5th Sunday School
-
-{{< youtube-playlist "PLhBlTVSSFAoKiRvYCqTvx0WyeVTELUcpF" >}}
-
-## Children's Songs and Stories
-
-{{< youtube-playlist "PLhBlTVSSFAoLtJcBUM5_abV-KLazkpB9d" >}}
-
 # Overview of Children's Ministry
 
 The Children’s Ministry at FBC is led by a team of dedicated individuals who dearly love the youngest members of the church body. This group addresses the spiritual, emotional, and physical needs of children from infancy through 5th grade through biblical teaching, play areas with appropriate toys, aesthetically pleasing rooms, and caring, competent teens and adults from the church who have passed background checks. 
