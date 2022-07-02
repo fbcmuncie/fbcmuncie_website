@@ -9,7 +9,7 @@ people:
 
 # Overview of Children's Ministry
 
-The Children’s Ministry at FBC Muncie is led by a team of dedicated individuals who dearly love the youngest members of the church. At FBC Muncie, we believe that Children’s Ministry should be:
+The Children’s Ministry at FBC Muncie is led by a team of dedicated people who dearly love the youngest members of the church. At FBC Muncie, we believe that Children’s Ministry should be:
 
 -   **Holistic and safe.** We care for the spiritual, emotional, social, and physical needs of children from infancy through 5th grade. To create a safe environment for our children, FBC Muncie requires that all Children’s Ministry volunteers be background checked and children can only be picked up by a parent / guardian with a matching security tag. For more information on FBC Muncie’s Child Protection Policy or the pick-up/drop-off safety procedures, go to the “Frequently Asked Questions” section below.  
 
