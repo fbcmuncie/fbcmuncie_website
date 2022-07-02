@@ -19,7 +19,7 @@ The Children’s Ministry at FBC Muncie is led by a team of dedicated individual
  -  **Part of the life of the entire congregation.**
  FBC Muncie believes that God created the church to be intergenerational. Children bring new gifts, energy, and perspectives that encourage the adults, while adults model for children what it looks like to worship and live out the Christian faith. For these reasons, FBC Muncie is committed to creating regular opportunities for children to be involved in worship and community service alongside the adult members of the congregation.
 
-Below you will find more about what you can expect from FBC Muncie’s Children’s Ministry.
+Below you'll find more about what you can expect from FBC Muncie’s Children’s Ministry.
 
 ## Sunday School - Sundays at 9:30 a.m.
 
