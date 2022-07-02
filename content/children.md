@@ -49,7 +49,7 @@ During this time, children will be invited to join their families and the congre
 
 When the first half of worship is over, a member of the FBC Muncie Leadership Team will invite all the children to line up and follow our Children’s Ministry volunteers to Children’s Church. Preschool children (ages 4-5) will have Children’s Church in Rm. 102 and children 1st-5th grade will have Children’s Church in Rm. B01. You are also welcome to walk with your child to Children’s Church if that makes you or your child feel more comfortable.
 
-uring this second half of worship, adults will have the opportunity to hear the sermon and call of response without worrying about entertaining their children. Meanwhile, during Children’s Church, your kids will be engaging with the Bible story through short stories, crafts, games, and other age-appropriate group activities.
+During this second half of worship, adults will have the opportunity to hear the sermon and call of response without worrying about entertaining their children. Meanwhile, during Children’s Church, your kids will be engaging with the Bible story through short stories, crafts, games, and other age-appropriate group activities.
 
 When worship is over, parents will take their security tag to pick-up their children from their various classrooms. If you are unsure where a classroom is located, you can stop by the Welcome Center and someone there will be able to guide you.
 
@@ -78,7 +78,9 @@ Here’s how you can get connected:
 
 # Frequently Asked Questions
 
-{{< faq "What security measures are in place?" "We have a check in station for children at our Welcome Center, located on the first floor hallway just outside the sanctuary. At the welcome center, our greeters will be able to assist you with checking-in your children and getting them to the correct classrooms.  When checking-in, parents enter a phone number and a name tag is issued for each child in that family. On the name tag is the child’s name, age, parent’s phone number (that is how you will be notified if your child is sick, hurt, etc), any known allergies, and a random code. Parents will get a security tag with a code that matches their child’s; this tag will need to be presented for pick up. Each classroom maintains at least two adults at all times. All Children's ministry volunteers are background checked and trained by an FBC Leader.">}}
+{{< faq "What security measures are in place?" "We have a check in station for children at our Welcome Center, located on the first floor hallway just outside the sanctuary. At the welcome center, our greeters will be able to assist you with checking-in your children and getting them to the correct classrooms.  
+
+When checking-in, parents enter a phone number and a name tag is issued for each child in that family. On the name tag is the child’s name, age, parent’s phone number (that is how you will be notified if your child is sick, hurt, etc), any known allergies, and a random code. Parents will get a security tag with a code that matches their child’s; this tag will need to be presented for pick up. Each classroom maintains at least two adults at all times. All Children's ministry volunteers are background checked and trained by an FBC Leader.">}}
 
 {{< faq "Can I volunteer on the Children’s Ministry team or in a classroom?" "We are always looking for those who have a heart to love and teach our children, but also would like to build a relationship and make expectations and resources available to those who volunteer. Backgroud checks and training are required for all volunteers. You can contact the church office, the Children's Ministry CCT Leader, or our pastors for more information." >}}
 
