@@ -12,7 +12,9 @@ roles: ["pastors", "cct"]
 ---
 
 Jonathan is one of the Co-Pastors of First Baptist, alongside his wife Kendall Ellis. His Bachelor of Arts degree in English and History is from Georgetown College in Kentucky. Jonathan received his Master of Divinity from Truett Theological Seminary at Baylor University in 2020.
-Before being called as Co-Pastor of FBC Muncie, Jonathan worked as a youth minister, and a high school English teacher in the United States and South Korea   
+
+Before being called as Co-Pastor of FBC Muncie, Jonathan worked as a youth minister, and a high school English teacher in the United States and South Korea.
+   
 In his free time, Jonathan enjoys video games, podcasts, the Cincinnati Reds, and going to the movies.
 Jonathan's favorite verse in Scripture are these words of Jesus in John:
 > “I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.” - John 16:33 (NIV)
