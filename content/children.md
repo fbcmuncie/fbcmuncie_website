@@ -9,15 +9,15 @@ people:
 
 # Overview of Children's Ministry
 
-- The Children’s Ministry at FBC Muncie is led by a team of dedicated individuals who dearly love the youngest members of the church. At FBC Muncie, we believe that Children’s Ministry should be:
+The Children’s Ministry at FBC Muncie is led by a team of dedicated individuals who dearly love the youngest members of the church. At FBC Muncie, we believe that Children’s Ministry should be:
 
 -   **Holistic and safe.** We care for the spiritual, emotional, social, and physical needs of children from infancy through 5th grade. To create a safe environment for our children, FBC Muncie requires that all Children’s Ministry volunteers be background checked and children can only be picked up by a parent / guardian with a matching security tag. For more information on FBC Muncie’s Child Protection Policy or the pick-up/drop-off safety procedures, go to the “Frequently Asked Questions” section below.  
 
-<li> **Age-appropriate**.
-- FBC Muncie has three classroom experiences, each designed with the specific age and developmental stages of children in mind. While in their classrooms, you can expect your children to learn biblical teachings through play areas with age-appropriate toys, group activities, books, and crafts.
+-  **Age-appropriate**.
+ FBC Muncie has three classroom experiences, each designed with the specific age and developmental stages of children in mind. While in their classrooms, you can expect your children to learn biblical teachings through play areas with age-appropriate toys, group activities, books, and crafts.
 
-**Part of the life of the entire congregation.**
-- FBC Muncie believes that God created the church to be intergenerational. Children bring new gifts, energy, and perspectives that encourage the adults, while adults model for children what it looks like to worship and live out the Christian faith. For these reasons, FBC Muncie is committed to creating regular opportunities for children to be involved in worship and community service alongside the adult members of the congregation.
+ -  **Part of the life of the entire congregation.**
+ FBC Muncie believes that God created the church to be intergenerational. Children bring new gifts, energy, and perspectives that encourage the adults, while adults model for children what it looks like to worship and live out the Christian faith. For these reasons, FBC Muncie is committed to creating regular opportunities for children to be involved in worship and community service alongside the adult members of the congregation.
 
 Below you will find more about what you can expect from FBC Muncie’s Children’s Ministry.
 
