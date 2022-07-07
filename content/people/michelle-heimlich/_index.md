@@ -1,12 +1,10 @@
 ---
-title: "Michelle Heimlech"
-prefix: 
+title: "Michelle Heimlich"
+prefix:
 position: Children
-twitter: 
-facebook: 
-linkedin: 
+twitter:
+facebook:
+linkedin:
 roles: [cct]
 weight: 5
 ---
-
-
