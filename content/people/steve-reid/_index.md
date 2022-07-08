@@ -2,11 +2,11 @@
 title: "Steve Reid"
 prefix:
 position:
-staff: false
 twitter:
 facebook:
 linkedin:
 roles:
+staff: false
 weight: 3
 ---
 
