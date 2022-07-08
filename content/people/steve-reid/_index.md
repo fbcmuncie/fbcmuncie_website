@@ -5,7 +5,6 @@ position:
 twitter:
 facebook:
 linkedin:
-roles:
 staff: false
 weight: 3
 ---
