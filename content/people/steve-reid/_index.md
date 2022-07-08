@@ -1,11 +1,11 @@
 ---
 title: "Steve Reid"
-prefix: 
-position: At Large
-twitter: 
-facebook: 
-linkedin: 
-roles: [cct]
+prefix:
+position: 
+twitter:
+facebook:
+linkedin:
+roles:
 weight: 5
 ---
 
