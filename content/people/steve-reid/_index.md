@@ -1,7 +1,8 @@
 ---
 title: "Steve Reid"
 prefix:
-position: 
+position:
+staff: false
 twitter:
 facebook:
 linkedin:
