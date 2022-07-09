@@ -20,7 +20,7 @@ Every Sunday, 9:30-10:15am in the FBC Youth Room (second floor).
 
 ## Zoom Youth Bible Study
 - Every Sunday 4:30-5:30pm.
- (Contact ***[Deena Green](deenaslanker@comcast.net)*** for the Zoom link)
+ (Contact ***[Deena Green](mailto:deenaslanker@comcast.net)*** for the Zoom link)
 
 Allowing the youth time to serve throughout the church and gather in homes facilitates a strong connection with the wider church body. Serving allowing the youth to connect in ways that will keep them involved as they get older. It also helps them understand Jesus' posture of submission and humility.
 
