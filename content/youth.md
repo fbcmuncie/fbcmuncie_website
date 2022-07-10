@@ -13,7 +13,7 @@ In partnership with families, the youth ministry of FBC exists to engage 100% of
 
 ## Youth Schedule
 
-The youth ministry schedule varies from week to week. You can refer back to this page to see what is coming up or contact [contact](https://fbcmuncie.org/contact/) the church for more information.
+The youth ministry schedule varies from week to week. You can refer back to this page to see what is coming up or ***[contact](https://fbcmuncie.org/contact/)*** the church for more information.
 
 ### Sunday school
 - Every Sunday, 9:30-10:15am in the FBC Youth Room (second floor).
