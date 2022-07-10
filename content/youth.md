@@ -15,10 +15,10 @@ In partnership with families, the youth ministry of FBC exists to engage 100% of
 
 The youth ministry schedule varies from week to week. You can refer back to this page to see what is coming up.
 
-## Sunday school
-Every Sunday, 9:30-10:15am in the FBC Youth Room (second floor).
+### Sunday school
+- Every Sunday, 9:30-10:15am in the FBC Youth Room (second floor).
 
-## Zoom Youth Bible Study
+### Zoom Youth Bible Study
 - Every Sunday 4:30-5:30pm.
  (Contact ***[Deena Green](mailto:deenaslanker@comcast.net)*** for the Zoom link)
 
@@ -38,4 +38,4 @@ The youth will be meeting via Zoom each week at 10 AM. Deena is sending out invi
 
 ## Camp Tippy
 
-Each summer, children and teens from First Baptist attend [Camp Tippy](https://sites.google.com/site/camptippecanoe/home).
+Each summer, children and teens from First Baptist attend [Camp Tippy](https://www.camptippy.org/home).
