@@ -2,7 +2,7 @@
 title: "Julie Kirklin"
 prefix:
 position: Church Clerk
-twitter:  
+twitter:
 facebook:
 linkedin:
 roles: [cct]
