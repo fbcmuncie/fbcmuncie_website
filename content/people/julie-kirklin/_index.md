@@ -1,10 +1,10 @@
 ---
 title: "Julie Kirklin"
-prefix: 
+prefix:
 position: Church Clerk
-twitter: 
-facebook: 
-linkedin: 
+twitter:  
+facebook:
+linkedin:
 roles: [cct]
 weight: 3
 ---
