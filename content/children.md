@@ -4,8 +4,11 @@ weight: 2
 description: Age Birth to 5th Grade
 menu: "age"
 people:
-  - Britney Sue
+
 ---
+
+# Latest News
+Check out our regular online  ***[Children's Newsletter](https://fbcmuncie.churchcenter.com/pages/childrens-ministry-news)*** (click to go to page)  to see the latest updates
 
 # Overview of Children's Ministry
 
@@ -78,7 +81,7 @@ Here’s how you can get connected:
 
 {{< faq "What security measures are in place?" "We have a check in station for children at our Welcome Center, located on the first floor hallway just outside the sanctuary. At the welcome center, our greeters will be able to assist you with checking-in your children and getting them to the correct classrooms. Each classroom maintains at least two adults at all times. All Children's ministry volunteers are background checked and trained by an FBC Leader.">}}
 
-{{< faq "What does check-in involve?" "When checking-in, parents enter a phone number and a name tag is issued for each child in that family. On the name tag is the child’s name, age, parent’s phone number (that is how you will be notified if your child is sick, hurt, etc), any known allergies, and a random code. Parents will get a security tag with a code that matches their child’s; this tag will need to be presented for pick up.">}} 
+{{< faq "What does check-in involve?" "When checking-in, parents enter a phone number and a name tag is issued for each child in that family. On the name tag is the child’s name, age, parent’s phone number (that is how you will be notified if your child is sick, hurt, etc), any known allergies, and a random code. Parents will get a security tag with a code that matches their child’s; this tag will need to be presented for pick up.">}}
 
 {{< faq "Can I volunteer on the Children’s Ministry team or in a classroom?" "We are always looking for those who have a heart to love and teach our children, but also would like to build a relationship and make expectations and resources available to those who volunteer. Backgroud checks and training are required for all volunteers. You can contact the church office, the Children's Ministry CCT Leader, or our pastors for more information." >}}
 

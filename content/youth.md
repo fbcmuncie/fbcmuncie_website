@@ -6,6 +6,9 @@ menu: "age"
 people:
   - Deena Green
 ---
+## Latest News
+Check out our regular online newsletter entitled ***["The Moose's Message"](https://fbcmuncie.churchcenter.com/pages/youth-the-mooses-message)*** (click to go to page)  to see the latest updates
+ or ***[contact](https://fbcmuncie.org/contact/)*** the church for more information.
 
 ## Youth Ministry Mission Statement
 
@@ -15,7 +18,7 @@ In partnership with families, the youth ministry of FBC exists to engage 100% of
 
 The youth ministry schedule varies.
 
-Check out our regular online newsletter entitled ***["The Moose's Message"](https://fbcmuncie.churchcenter.com/pages/youth-the-mooses-message)*** to see the latest updates
+Check out our regular online newsletter entitled ***["The Moose's Message"](https://fbcmuncie.churchcenter.com/pages/youth-the-mooses-message)*** (click to go to page)  to see the latest updates
  or ***[contact](https://fbcmuncie.org/contact/)*** the church for more information.
 
 ### Sunday school
