@@ -15,6 +15,6 @@ Jonathan is one of the Co-Pastors of First Baptist, alongside his wife Kendall E
 
 Before serving as a pastor, Jonathan worked as a youth minister, taught high school English in the United States, and middle school English as a Foreign Language in South Korea.
 
-In his free time, Jonathan enjoys video games, podcasts, the Cincinnati Reds, and going to the movies.
+In his free time Jonathan enjoys video games, podcasts, the Cincinnati Reds, and going to the movies.
 Jonathan's favorite verse in Scripture are these words of Jesus in the Gospel of John:
 > “I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.” - John 16:33 (NIV)
