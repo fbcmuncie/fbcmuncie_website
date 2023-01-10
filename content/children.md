@@ -61,7 +61,6 @@ Several children’s events are planned throughout the year. Some are just for f
 
 Examples of special events you can expect from our Children’s Ministry include:
 
-- Camp Tippecanoe
 - Vacation Bible School (VBS)
 - Kids Day out
 - Family Service opportunities
